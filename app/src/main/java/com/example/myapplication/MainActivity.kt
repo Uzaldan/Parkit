@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -21,31 +22,24 @@ class MainActivity : ComponentActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainactivity)
-        val txtview: TextView  = findViewById(R.id.textView);
-        txtview.text= ("PIS");
-        val mapbutton: TextView  = findViewById(R.id.button1);
-        mapbutton.text= ("Map");
-        val lotButton: TextView  = findViewById(R.id.button);
-        lotButton.text= ("Lot List");
-        val favButton: TextView  = findViewById(R.id.button2);
-        favButton.text= ("Favorites");
-        mapbutton.setOnClickListener{
+        val lotListB = findViewById<Button>(R.id.lotListButton)
+        val mapB = findViewById<Button>(R.id.mapButton)
+        val subInfoB = findViewById<Button>(R.id.submitInfoButton)
+       // val B= findViewById<Button>(R.id.)
+       // val B= findViewById<Button>(R.id.)
+        //val B= findViewById<Button>(R.id.)
+       // val B= findViewById<Button>(R.id.)
+       // val B= findViewById<Button>(R.id.)
+        subInfoB.setOnClickListener{
+            setContentView(R.layout.activity_lotlist)
+        }
+        lotListB.setOnClickListener{
+            setContentView(R.layout.activity_lotlist)
+        }
+        mapB.setOnClickListener{
+            setContentView(R.layout.activity_lotinfo)
+        }
 
-            startActivity(Intent(this, Parking_map::class.java).apply {
-                // you can add values(if any) to pass to the next class or avoid using `.apply`
-
-            })
-        }
-        lotButton.setOnClickListener{
-            Toast.makeText(this@MainActivity, "Hi lots!", Toast.LENGTH_SHORT).show()
-        }
-        favButton.setOnClickListener{
-            Toast.makeText(this@MainActivity, "Hi favs!", Toast.LENGTH_SHORT).show()
-            favButton.text= ("bean button");
-        }
-        //button3.setOnClickListener{
-//
-  //      }
     }
     }
 

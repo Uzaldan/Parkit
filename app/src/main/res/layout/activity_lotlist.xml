@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:id="@+id/llActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lot List"
+
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llActivityTitle"
+        app:layout_constraintVertical_bias="0.504">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="?android:attr/colorButtonNormal"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutWH"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorWH"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotWH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot WH"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barWH"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileWH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesWH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barWH2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleWH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsWH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutT1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorT1"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotT1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot T1"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barT1"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileT1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesT1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barT12"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleT1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsT1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutT3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorT3"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotT3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot T3"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barT3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileT3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesT3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barT32"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleT3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsT3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutEC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorEC"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotEC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot EC"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barEC"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileEC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesEC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barEC2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleEC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsEC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorM"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotM"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot M"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barM"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileM"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesM"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barM2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleM"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsM"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutH"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorH"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot H"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barH"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barH2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutN"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorN"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotN"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot N"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barN"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTitleN"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/Lot_N_Spaces"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barN2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleN"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsN"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorET"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot ET"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barET"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barET2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutZ"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorZ"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/LotZ"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot Z"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barZ"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTitleZ"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesZ"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barZ2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleZ"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsZ"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutW"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorW"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotW"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot W"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barW"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileW"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesW"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barW2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleW"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsW"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorS"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot S"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barS"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barS2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layoutNT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorNT"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotNT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot NT"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barNT"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileNT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesNT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barNT2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleNT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsNT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
