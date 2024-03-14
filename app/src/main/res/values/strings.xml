@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="title_activity_parking_map">Parking_map</string>
+    <string-array name="Percents">
+        <item>0%</item>
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+
 </resources>
