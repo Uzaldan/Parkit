@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/editLotName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#505050"
@@ -19,27 +19,40 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="391dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/editLotName"
         app:layout_constraintVertical_bias="0.050000012">
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Empty Lots"
+            android:text="How Full is it?"
             android:textSize="34sp" />
 
-        <Spinner
-            android:id="@+id/spinner2"
+        <View
+            android:id="@+id/divider9"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider" />
+
+        <Spinner
+            android:id="@+id/lotPercent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:entries="@array/Percents" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider" />
 
         <TextView
             android:id="@+id/textView12"
@@ -48,6 +61,12 @@
             android:text="Conditions"
             android:textSize="34sp" />
 
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
@@ -55,29 +74,35 @@
             android:text="Maintenance"
             android:textSize="24sp" />
 
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider" />
+
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/potBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Potholes"
             android:textSize="20sp" />
 
         <CheckBox
-            android:id="@+id/checkBox6"
+            android:id="@+id/gravelBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Gravel"
             android:textSize="20sp" />
 
         <CheckBox
-            android:id="@+id/checkBox7"
+            android:id="@+id/plowBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Plowed"
             android:textSize="20sp" />
 
         <CheckBox
-            android:id="@+id/checkBox9"
+            android:id="@+id/saltBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Salt"
@@ -90,34 +115,53 @@
             android:text="Weather"
             android:textSize="24sp" />
 
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider" />
+
         <CheckBox
-            android:id="@+id/checkBox5"
+            android:id="@+id/snowBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Snow"
             android:textSize="20sp" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/iceBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ice"
             android:textSize="20sp" />
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/floodBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Flooded"
             android:textSize="20sp" />
 
         <CheckBox
-            android:id="@+id/checkBox8"
+            android:id="@+id/hailBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Golf ball hail"
             android:textSize="20sp" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

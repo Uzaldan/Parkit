@@ -12,7 +12,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".ParkingMap1"
+            android:exported="false"
+            android:label="@string/title_activity_parking_map1"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".LotList"
+            android:exported="false"
+            android:label="@string/title_activity_lot_list"
+            android:theme="@style/Theme.MyApplication" />
 
+        <activity
+            android:name=".Feedback"
+            android:exported="false"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".LotInfo"
+            android:exported="false"
+            android:label="@string/title_activity_lot_info"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".EditLot"
+            android:exported="false"
+            android:label="@string/title_activity_edit_lot"
+            android:theme="@style/Theme.MyApplication" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -27,11 +52,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />
-
-        <activity
-            android:name=".Parking_map"
-            android:exported="false"
-            android:label="@string/title_activity_parking_map" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

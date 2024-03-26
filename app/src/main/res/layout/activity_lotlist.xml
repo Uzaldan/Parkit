@@ -20,12 +20,11 @@
 
 
     <ScrollView
-        android:layout_width="410dp"
+        android:layout_width="400dp"
         android:layout_height="700dp"
         android:layout_marginTop="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/llActivityTitle"
         app:layout_constraintVertical_bias="0.504">
@@ -41,7 +40,103 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/linearLayout"
+                android:id="@+id/layoutXT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/indicatorXT"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@android:color/holo_red_dark"
+                            tools:ignore="MissingConstraints" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lotXT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lot XT"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/barXT"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/parkingTileXT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parking spaces:"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <TextView
+                                android:id="@+id/parkingSpacesXT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="50/100"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <ImageView
+                                android:id="@+id/barXT2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:src="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/conditionsTitleXT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condtions:"
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/conditionsXT"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layoutWH"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
@@ -51,7 +146,7 @@
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout
-                    android:id="@+id/layoutWH"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -666,7 +761,7 @@
                                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                             <TextView
-                                android:id="@+id/Lot_N_Spaces"
+                                android:id="@+id/parkingSpacesN"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="50/100"

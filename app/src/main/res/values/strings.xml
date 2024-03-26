@@ -8,5 +8,11 @@
         <item>75%</item>
         <item>100%</item>
     </string-array>
+    <string name="title_activity_edit_lot">EditLot</string>
+    <string name="title_activity_lot_info">LotInfo</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_lot_list">LotList</string>
+    <string name="title_activity_parking_map1">ParkingMap1</string>
 
 </resources>
