@@ -63,7 +63,7 @@ class EditLot : ComponentActivity() {
 
 
          //snowcbx.isChecked =
-       runstupidshit( arrayOf(potholcbx,gravelcbx,snowcbx,saltcbx,icecbx,plowcbx,floodcbx),
+       updateData( arrayOf(potholcbx,gravelcbx,snowcbx,saltcbx,icecbx,plowcbx,floodcbx),
            arrayOf("potholes","gravel","snow","salt","ice","plowed","flooded","hail")
        );
         initPercent(lotPercent)
@@ -89,7 +89,7 @@ class EditLot : ComponentActivity() {
         updateB.setOnClickListener() {
             var thing = lotPercent.selectedItem.toString().trim('%').toInt()
             bool = arrayOf(snowcbx.isChecked, potholcbx.isChecked, saltcbx.isChecked,gravelcbx.isChecked,icecbx.isChecked,plowcbx.isChecked,floodcbx.isChecked,hailcbx.isChecked)
-            changestupidshit(bool, arrayOf("snow","potholes","salt","gravel","ice","plowed","flooded","hail"));
+            changeData(bool, arrayOf("snow","potholes","salt","gravel","ice","plowed","flooded","hail"));
             changePercent(thing)
             //updateconditions(currentLot,bool);
             //updatelot(currentLot,)
@@ -101,7 +101,7 @@ class EditLot : ComponentActivity() {
 
     }
 }
-fun runstupidshit(tar: Array<CheckBox>,dbTar: Array<String>) = runBlocking {
+fun updateData(tar: Array<CheckBox>,dbTar: Array<String>) = runBlocking {
     var i = 0;
     val dbtable = database.child("conditions").child(currentLot)
     for (thing in tar) {
@@ -112,7 +112,7 @@ fun runstupidshit(tar: Array<CheckBox>,dbTar: Array<String>) = runBlocking {
         i += 1;
     }
 }
-fun changestupidshit(tar: Array<Boolean>,dbTar: Array<String>) = runBlocking {
+fun changeData(tar: Array<Boolean>,dbTar: Array<String>) = runBlocking {
     var i = 0;
     val dbtable = database.child("conditions").child(currentLot)
     for (thing in tar) {
